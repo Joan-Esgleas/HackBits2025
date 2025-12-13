@@ -62,7 +62,7 @@ public class ManagerScene : MonoBehaviour
           for(int i = 0; i < historialField.Length; ++i){
             string res = "";
             if(sysmanager.historial.Count > i) 
-                    res = sysmanager.historial[i].dt.ToString()+ "     "+ sysmanager.historial[i].puntuacion.ToString();
+                    res = sysmanager.historial[i].dt.ToString()+ "\nResultados: "+ sysmanager.historial[i].puntuacion.ToString();
             historialField[i].text = res;
           }
         }
@@ -143,15 +143,6 @@ public class ManagerScene : MonoBehaviour
       u.puntuacion = sysmanager.usuario.puntuacion;
       sysmanager.historial.Add(u);
       
-        if (historialField.Length > 0)
-        {
-            for (int i = 0; i < historialField.Length; ++i)
-            {
-                string res = "";
-                if (sysmanager.historial.Count > i)
-                    res = sysmanager.historial[i].dt.ToString() + "     " + sysmanager.historial[i].puntuacion.ToString();
-                historialField[i].text = res;
-            }
-        }
+
     }
 }
