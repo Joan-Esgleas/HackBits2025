@@ -21,6 +21,10 @@ public class ManagerScene : MonoBehaviour
     [SerializeField]
     private GameObject sysmanagerPrefab;
     private SysManager sysmanager;
+    [SerializeField]
+    bool HayTiempo = false;
+    int CuantoTiempo = 3;
+    string SiguienteEscena = "mainMenu";
 
     [Space (10)]
     [Header("Input Field")]
@@ -37,6 +41,9 @@ public class ManagerScene : MonoBehaviour
     [SerializeField]
     List<Respuesta> respuestas;
 
+    [Spacer(10)]
+    public TextMeshPro[] historialField;
+
     private void Start()
     {
        sysmanager = FindAnyObjectByType<SysManager>();
@@ -49,6 +56,15 @@ public class ManagerScene : MonoBehaviour
         if (ano_inputField != null) ano_inputField.onSubmit.AddListener(delegate { GetAno(); });
         foreach (Respuesta r in respuestas) {
             r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
+        }
+        if(HayTiempo) StartCourutine(TimingScene());
+        if(historialField.Length > 0 && 
+            sysmanager.historial.Length >= historialField.Length) {
+          for(int i = 0; i < historialField.Length; ++i){
+            string res = "";
+            res = sysmanager.historial[i].dt.ToString()+ "     "+ sysmanager.historial[i].puntuacion.ToString();
+            historialField[i].text = res;
+          }
         }
     }
 
@@ -110,10 +126,18 @@ public class ManagerScene : MonoBehaviour
         sysmanager.usuario.puntuacion += n;
     }
 
+    private IEnumerator TimingScene() {
+        yield return WaitForSeconds(CuantoTiempo);
+        SceneManager.LoadScene(SiguienteEscena, LoadSceneMode.Single);
+    }
 
     private void Update()
     {
 
     }
     
+    public void EndTest() {
+      Usuario u = sysmanager.usuario;
+      historial.Add(u);
+    }
 }
