@@ -41,8 +41,8 @@ public class ManagerScene : MonoBehaviour
     [SerializeField]
     List<Respuesta> respuestas;
 
-    [Spacer(10)]
-    public TextMeshPro[] historialField;
+    [Space(10)]
+    public TextMeshProUGUI[] historialField;
 
     private void Start()
     {
@@ -57,12 +57,12 @@ public class ManagerScene : MonoBehaviour
         foreach (Respuesta r in respuestas) {
             r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
         }
-        if(HayTiempo) StartCourutine(TimingScene());
-        if(historialField.Length > 0 && 
-            sysmanager.historial.Length >= historialField.Length) {
+        if(HayTiempo) StartCoroutine(TimingScene());
+        if(historialField.Length > 0) {
           for(int i = 0; i < historialField.Length; ++i){
             string res = "";
-            res = sysmanager.historial[i].dt.ToString()+ "     "+ sysmanager.historial[i].puntuacion.ToString();
+            if(sysmanager.historial.Count > i) 
+                    res = sysmanager.historial[i].dt.ToString()+ "     "+ sysmanager.historial[i].puntuacion.ToString();
             historialField[i].text = res;
           }
         }
@@ -127,7 +127,7 @@ public class ManagerScene : MonoBehaviour
     }
 
     private IEnumerator TimingScene() {
-        yield return WaitForSeconds(CuantoTiempo);
+        yield return new WaitForSeconds(CuantoTiempo);
         SceneManager.LoadScene(SiguienteEscena, LoadSceneMode.Single);
     }
 
@@ -137,7 +137,21 @@ public class ManagerScene : MonoBehaviour
     }
     
     public void EndTest() {
-      Usuario u = sysmanager.usuario;
-      historial.Add(u);
+      sysmanager.usuario.dt = DateTime.Now;
+      Usuario u = new Usuario();
+      u.dt = sysmanager.usuario.dt;
+      u.puntuacion = sysmanager.usuario.puntuacion;
+      sysmanager.historial.Add(u);
+      
+        if (historialField.Length > 0)
+        {
+            for (int i = 0; i < historialField.Length; ++i)
+            {
+                string res = "";
+                if (sysmanager.historial.Count > i)
+                    res = sysmanager.historial[i].dt.ToString() + "     " + sysmanager.historial[i].puntuacion.ToString();
+                historialField[i].text = res;
+            }
+        }
     }
 }
