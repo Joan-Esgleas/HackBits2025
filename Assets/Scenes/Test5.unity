@@ -197,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3080000261679084646, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -819
+      value: -807
       objectReference: {fileID: 0}
     - target: {fileID: 3080000261679084646, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -209,6 +209,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3080000261679084646, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417985489698286289, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_text
+      value: 'Siguiente
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417985489698286289, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_fontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417985489698286289, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 7417985489698286289, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417985489698286289, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417985489698286289, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+    - target: {fileID: 7417985489698286289, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
@@ -264,6 +294,34 @@ PrefabInstance:
     - target: {fileID: 2832986002561963909, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
       propertyPath: m_Name
       value: InputField
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278171123410410715, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278171123410410715, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278171123410410715, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030759348036790933, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
+      propertyPath: m_text
+      value: "Escribe aqu\xED..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030759348036790933, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030759348036790933, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
+      propertyPath: m_fontStyle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030759348036790933, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7619123832621493625, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
       propertyPath: m_Pivot.x
@@ -331,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7619123832621493625, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -302
+      value: -268
       objectReference: {fileID: 0}
     - target: {fileID: 7619123832621493625, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -478,6 +536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 6509127594634261593, guid: 8fc3767ad32488c4b8571d33b0127a05, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: acc2804de3e3cb64db3671c717b29a8f, type: 2}
     - target: {fileID: 8155038277050551605, guid: 8fc3767ad32488c4b8571d33b0127a05, type: 3}
       propertyPath: m_Pivot.x
       value: 0

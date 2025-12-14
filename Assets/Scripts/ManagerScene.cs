@@ -54,8 +54,6 @@ public class ManagerScene : MonoBehaviour
         if (dia_inputField != null) dia_inputField.onSubmit.AddListener(delegate { GetDia(); });
         if (mes_inputField != null) mes_inputField.onSubmit.AddListener(delegate { GetMes(); });
         if (ano_inputField != null) ano_inputField.onSubmit.AddListener(delegate { GetAno(); });
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
         foreach (Respuesta r in respuestas) {
             r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
         }
@@ -64,35 +62,10 @@ public class ManagerScene : MonoBehaviour
           for(int i = 0; i < historialField.Length; ++i){
             string res = "";
             if(sysmanager.historial.Count > i) 
-                    res = sysmanager.historial[i].dt.ToString()+ "     "+ sysmanager.historial[i].puntuacion.ToString();
+                    res = sysmanager.historial[i].dt.ToString()+ "\nResultados: "+ sysmanager.historial[i].puntuacion.ToString();
             historialField[i].text = res;
           }
-=======
-=======
->>>>>>> Stashed changes
-        if (respuestas.Count > 0) {
-            foreach (Respuesta r in respuestas)
-            {
-                r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
-            }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         }
-
-            if (HayTiempo) StartCoroutine(TimingScene());
-            if (historialField.Length > 0)
-            {
-                for (int i = 0; i < historialField.Length; ++i)
-                {
-                    string res = "";
-                    if (sysmanager.historial.Count > i)
-                        res = sysmanager.historial[i].dt.ToString() + "\nResultados: " + 
-                                sysmanager.historial[i].puntuacion.ToString() + "/14";
-                    historialField[i].text = res;
-                }
-            }
     }
 
     public void LoadScene(string sceneName) {
@@ -121,7 +94,6 @@ public class ManagerScene : MonoBehaviour
     }
 
     public void GetMes() {
-        Debug.Log(DateTime.Now.Month.ToString());
         string d_str = mes_inputField.text;
         int d = int.Parse(d_str);
         if(d.ToString() == DateTime.Now.Month.ToString()) AddPuntuacion();
@@ -129,7 +101,6 @@ public class ManagerScene : MonoBehaviour
     }
 
     public void GetAno() {
-        Debug.Log(DateTime.Now.Year.ToString());
         string d_str = ano_inputField.text;
         int d = int.Parse(d_str);
         if (d.ToString() == DateTime.Now.Year.ToString()) AddPuntuacion();
@@ -141,11 +112,10 @@ public class ManagerScene : MonoBehaviour
         {
             if (r.inputField.text == respuestaE)
             {
-                AddPuntuacion();
-            }
+                AddPuntuacion();            }
         }
+       
     }
-
     public void AddPuntuacion()
     {
         sysmanager.usuario.puntuacion++;
@@ -170,33 +140,10 @@ public class ManagerScene : MonoBehaviour
       sysmanager.usuario.dt = DateTime.Now;
       Usuario u = new Usuario();
       u.dt = sysmanager.usuario.dt;
-      u.puntuacion = sysmanager.usuario.puntuacion % 15;
+      u.puntuacion = sysmanager.usuario.puntuacion;
+        if (u.puntuacion > 14) u.puntuacion = 14;
       sysmanager.historial.Add(u);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      
-        if (historialField.Length > 0)
-        {
-            for (int i = 0; i < historialField.Length; ++i)
-            {
-                string res = "";
-                if (sysmanager.historial.Count > i)
-                    res = sysmanager.historial[i].dt.ToString() + "     " + sysmanager.historial[i].puntuacion.ToString();
-                historialField[i].text = res;
-            }
-        }
-=======
-=======
->>>>>>> Stashed changes
-     
-    }
-    public void RestartTest(string l)
-    {
-        sysmanager.usuario.puntuacion = 0;
-        SceneManager.LoadScene(l, LoadSceneMode.Single);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      sysmanager.usuario.puntuacion = 0;
+
     }
 }
