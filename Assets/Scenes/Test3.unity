@@ -1179,7 +1179,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+>>>>>>> Stashed changes
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
 >>>>>>> Stashed changes

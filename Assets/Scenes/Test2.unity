@@ -593,6 +593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1001 &3556468965732478584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -651,6 +652,8 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!114 &2021025410 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7222163686805639146, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
@@ -667,6 +670,9 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7619123832621493625, guid: 755a279abd177b04a98d5814e3aa0c11, type: 3}
   m_PrefabInstance: {fileID: 352326376}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1001 &3717937056916133221
 PrefabInstance:

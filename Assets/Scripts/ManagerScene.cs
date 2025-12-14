@@ -55,6 +55,7 @@ public class ManagerScene : MonoBehaviour
         if (mes_inputField != null) mes_inputField.onSubmit.AddListener(delegate { GetMes(); });
         if (ano_inputField != null) ano_inputField.onSubmit.AddListener(delegate { GetAno(); });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         foreach (Respuesta r in respuestas) {
             r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
         }
@@ -67,11 +68,16 @@ public class ManagerScene : MonoBehaviour
             historialField[i].text = res;
           }
 =======
+=======
+>>>>>>> Stashed changes
         if (respuestas.Count > 0) {
             foreach (Respuesta r in respuestas)
             {
                 r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
             }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
 
@@ -167,6 +173,7 @@ public class ManagerScene : MonoBehaviour
       u.puntuacion = sysmanager.usuario.puntuacion % 15;
       sysmanager.historial.Add(u);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       
         if (historialField.Length > 0)
         {
@@ -179,12 +186,17 @@ public class ManagerScene : MonoBehaviour
             }
         }
 =======
+=======
+>>>>>>> Stashed changes
      
     }
     public void RestartTest(string l)
     {
         sysmanager.usuario.puntuacion = 0;
         SceneManager.LoadScene(l, LoadSceneMode.Single);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }
