@@ -54,6 +54,7 @@ public class ManagerScene : MonoBehaviour
         if (dia_inputField != null) dia_inputField.onSubmit.AddListener(delegate { GetDia(); });
         if (mes_inputField != null) mes_inputField.onSubmit.AddListener(delegate { GetMes(); });
         if (ano_inputField != null) ano_inputField.onSubmit.AddListener(delegate { GetAno(); });
+<<<<<<< Updated upstream
         foreach (Respuesta r in respuestas) {
             r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
         }
@@ -65,7 +66,27 @@ public class ManagerScene : MonoBehaviour
                     res = sysmanager.historial[i].dt.ToString()+ "     "+ sysmanager.historial[i].puntuacion.ToString();
             historialField[i].text = res;
           }
+=======
+        if (respuestas.Count > 0) {
+            foreach (Respuesta r in respuestas)
+            {
+                r.inputField.onSubmit.AddListener(delegate { CheckRespuesta(r); });
+            }
+>>>>>>> Stashed changes
         }
+
+            if (HayTiempo) StartCoroutine(TimingScene());
+            if (historialField.Length > 0)
+            {
+                for (int i = 0; i < historialField.Length; ++i)
+                {
+                    string res = "";
+                    if (sysmanager.historial.Count > i)
+                        res = sysmanager.historial[i].dt.ToString() + "\nResultados: " + 
+                                sysmanager.historial[i].puntuacion.ToString() + "/14";
+                    historialField[i].text = res;
+                }
+            }
     }
 
     public void LoadScene(string sceneName) {
@@ -94,6 +115,7 @@ public class ManagerScene : MonoBehaviour
     }
 
     public void GetMes() {
+        Debug.Log(DateTime.Now.Month.ToString());
         string d_str = mes_inputField.text;
         int d = int.Parse(d_str);
         if(d.ToString() == DateTime.Now.Month.ToString()) AddPuntuacion();
@@ -101,6 +123,7 @@ public class ManagerScene : MonoBehaviour
     }
 
     public void GetAno() {
+        Debug.Log(DateTime.Now.Year.ToString());
         string d_str = ano_inputField.text;
         int d = int.Parse(d_str);
         if (d.ToString() == DateTime.Now.Year.ToString()) AddPuntuacion();
@@ -112,10 +135,11 @@ public class ManagerScene : MonoBehaviour
         {
             if (r.inputField.text == respuestaE)
             {
-                AddPuntuacion();            }
+                AddPuntuacion();
+            }
         }
-       
     }
+
     public void AddPuntuacion()
     {
         sysmanager.usuario.puntuacion++;
@@ -140,8 +164,9 @@ public class ManagerScene : MonoBehaviour
       sysmanager.usuario.dt = DateTime.Now;
       Usuario u = new Usuario();
       u.dt = sysmanager.usuario.dt;
-      u.puntuacion = sysmanager.usuario.puntuacion;
+      u.puntuacion = sysmanager.usuario.puntuacion % 15;
       sysmanager.historial.Add(u);
+<<<<<<< Updated upstream
       
         if (historialField.Length > 0)
         {
@@ -153,5 +178,13 @@ public class ManagerScene : MonoBehaviour
                 historialField[i].text = res;
             }
         }
+=======
+     
+    }
+    public void RestartTest(string l)
+    {
+        sysmanager.usuario.puntuacion = 0;
+        SceneManager.LoadScene(l, LoadSceneMode.Single);
+>>>>>>> Stashed changes
     }
 }
