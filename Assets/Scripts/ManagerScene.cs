@@ -141,8 +141,9 @@ public class ManagerScene : MonoBehaviour
       Usuario u = new Usuario();
       u.dt = sysmanager.usuario.dt;
       u.puntuacion = sysmanager.usuario.puntuacion;
+        if (u.puntuacion > 14) u.puntuacion = 14;
       sysmanager.historial.Add(u);
-      
+      sysmanager.usuario.puntuacion = 0;
 
     }
 }

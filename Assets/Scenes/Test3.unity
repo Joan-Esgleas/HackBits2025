@@ -249,11 +249,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -277,7 +277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddPuntuacion
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -290,6 +290,10 @@ PrefabInstance:
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ManagerScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Test4
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -462,11 +466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -490,7 +494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddPuntuacion
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -503,6 +507,10 @@ PrefabInstance:
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ManagerScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Test4
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -655,11 +663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -683,7 +691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddPuntuacion
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -696,6 +704,10 @@ PrefabInstance:
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ManagerScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Test4
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -848,11 +860,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -876,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddPuntuacion
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -889,6 +901,10 @@ PrefabInstance:
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ManagerScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Test4
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -1236,11 +1252,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -1264,7 +1280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddPuntuacion
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -1277,6 +1293,10 @@ PrefabInstance:
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ManagerScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Test4
       objectReference: {fileID: 0}
     - target: {fileID: 7651167153367012431, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -1299,63 +1319,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76e052ff6dc6b1d4587fa97f6f83defd, type: 3}
---- !u!1001 &3556468965732478584
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2573845000897649059, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_Name
-      value: SysManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779390790912339357, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 120c3eee6759b424b8fb14eac58c9175, type: 3}
 --- !u!1001 &3717937056916133221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1644,4 +1607,3 @@ SceneRoots:
   - {fileID: 9134673617912006844}
   - {fileID: 8125059415400332367}
   - {fileID: 3717937056916133221}
-  - {fileID: 3556468965732478584}
